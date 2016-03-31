@@ -1,10 +1,17 @@
+action :remove do
+
+  docker_image "#{node['docker']['registry']['url']}/#{new_resource.name}" do
+    action :remove
+  end
+
+end
+
 action :pull do
 
   # Get image from private repository. Login using the docker-utils::registry recipe first.
   docker_image "#{node['docker']['registry']['url']}/#{new_resource.name}" do
     action :pull
     tag new_resource.tag
-    force true
     read_timeout 300
   end
 
