@@ -4,6 +4,7 @@ action :pull do
   docker_image "#{node['docker']['registry']['url']}/#{new_resource.name}" do
     action :pull
     tag new_resource.tag
+    force true
     read_timeout 300
   end
 
