@@ -10,6 +10,6 @@ Some utilities around the docker cookbook:
 * waiting for a container to start
 EOH
 supports         'ubuntu', '>= 14.04'
-version          '1.0.1'
+version          '1.0.2'
 
 depends 'docker', '~> 2.6.1'
