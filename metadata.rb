@@ -12,4 +12,4 @@ EOH
 supports         'ubuntu', '>= 14.04'
 version          '1.0.2'
 
-depends 'docker', '~> 2.6.1'
+depends 'docker', '~> 2.0'
